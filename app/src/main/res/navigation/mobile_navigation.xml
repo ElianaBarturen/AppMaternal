@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Bienvenido">
+
+    <fragment
+        android:id="@+id/nav_Bienvenido"
+        android:name="com.example.appmaternal.BienvenidoFragment"
+        android:label="@string/menu_bienvenido"
+        tools:layout="@layout/fragment_bienvenido">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appmaternal.GestanteAgregarFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_gestante_agregar">
+    </fragment>
+
+    <fragment
+        android:id="@+id/usuariaRegistrarFragment"
+        android:name="com.example.appmaternal.UsuarioRegistrarFragment"
+        android:label=""
+        tools:layout="@layout/fragment_usuario_registrar">
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicoRegistrarFragment"
+        android:name="com.example.appmaternal.MainMedicoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main_medico">
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicoBienvenidoFragment"
+        android:name="com.example.appmaternal.MedicoBienvenidoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_medico_bienvenido">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_historial"
+        android:name="com.example.appmaternal.HistorialCardviewFragment"
+        android:label="@string/menu_historial"
+        tools:layout="@layout/fragment_historial_cardview">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recordatorios"
+        android:name="com.example.appmaternal.RecordatoriosFragment"
+        android:label="@string/menu_recordatorios"
+        tools:layout="@layout/fragment_recordatorios">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_reportes"
+        android:name="com.example.appmaternal.ReportesFragment"
+        android:label="@string/menu_reportes"
+        tools:layout="@layout/fragment_reportes">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/opcionesMedicoFragment"
+        android:name="com.example.appmaternal.OpcionesMedicoFragment"
+        android:label="opciones_medico"
+        tools:layout="@layout/fragment_opciones_medico">
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardviewListaGestanteObstetra"
+        android:name="com.example.appmaternal.CardviewGestanteListaObstetraFragment"
+        android:label="listaGestanteObs"
+        tools:layout="@layout/fragment_cardview_gestante_lista_obstetra">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_informativo"
+        android:name="com.example.appmaternal.SeccionInformativaFragment"
+        android:label="Sección informativa"
+        tools:layout="@layout/fragment_seccion_informativa">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_personalizar_notificacion"
+        android:label=""
+        android:name="com.example.appmaternal.SetNotificacionFragment"
+        tools:layout="@layout/fragment_set_notificacion">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cerrar_sesion"
+        android:label="listaGestanteObs"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+</navigation>

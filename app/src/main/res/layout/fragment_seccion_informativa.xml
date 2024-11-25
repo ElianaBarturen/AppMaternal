@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sección de Consejos de Prevención -->
+        <TextView
+            android:id="@+id/tv_consejos_prevencion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consejos de Prevención"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_consejos_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Mantener una dieta baja en sal\n• Realizar actividad física\n• Controlar el peso\n• Reducir el estrés"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección de Importancia del Diagnóstico Temprano -->
+        <TextView
+            android:id="@+id/tv_importancia_diagnostico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Importancia del Diagnóstico Temprano"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_importancia_diagnostico_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El diagnóstico temprano es clave para prevenir complicaciones graves tanto para la madre como para el bebé. Monitorear los síntomas y acudir al médico ante cualquier sospecha es fundamental."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección de Síntomas Comunes -->
+        <TextView
+            android:id="@+id/tv_sintomas_comunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Síntomas Comunes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_sintomas_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Dolor de cabeza intenso\n• Hinchazón en manos y pies\n• Visión borrosa\n• Dolor en la parte superior del abdomen"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección de Números de Contacto de Emergencia -->
+        <TextView
+            android:id="@+id/tv_contacto_emergencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Números de Contacto de Emergencia"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_numeros_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Emergencias: 911\n• Médico de cabecera: +51 999999999\n• Centro de salud local: +51 999999999"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para abrir la sección de contacto -->
+        <Button
+            android:id="@+id/btn_contactar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contactar de inmediato"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

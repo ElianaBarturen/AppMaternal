@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutReporteInfoHinchazonPies"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <!-- Cuadro con borde más grueso y color blanco -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDialogLayoutHinchazonPies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeColor="@android:color/white">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pulsera_presion">
+                </ImageView>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDialogPresionArterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+
+                    android:text="Para registrar la presión arterial en la aplicación móvil, debe fijarse en que la pulsera marque lo siguiente:
+                                \n 1. La primera cifra de la parte superior marca la presíón arterial sistólica
+                                \n 2. La segunda cifra de la parte inferior marca la presión arterial diastólica
+                                \n *Debe registrar de acuerdo a sus resultados*"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

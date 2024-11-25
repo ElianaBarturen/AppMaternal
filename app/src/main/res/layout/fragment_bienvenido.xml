@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BienvenidoFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutProgressBar1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBarSemana"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_progress_bar_bienvenida" />
+
+        <!-- Container for the text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- TextView for "Estás en la semana" -->
+            <TextView
+                android:id="@+id/txtSemanaPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Estás en la semana"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- TextView for the week number -->
+            <TextView
+                android:id="@+id/txtSemanaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

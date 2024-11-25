@@ -1,0 +1,89 @@
+<!-- layout/activity_reporte_obs_sintomas.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Gráficos para cada síntoma -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartCefalea"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp">
+        </Space>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartDolorEpigastrio"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp">
+        </Space>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartHinchazonPies"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartVisionBorrosa"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp">
+        </Space>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartNauseas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tus notas aquí"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--  <com.google.android.material.button.MaterialButton
+                android:id="@+id/prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previsualizar pdf" /> -->>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/btnPdf"
+                android:text="Generar reporte PDF"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/reportes">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Sintomas">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewSintomas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textAutoComplete|textAutoCorrect" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Semanas">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewSemanas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textAutoComplete|textAutoCorrect" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReportes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Generar reporte"/>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/graficostLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/firstRowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Aquí va el primer ProgressBar con imagen -->
+                    <RelativeLayout
+                        android:id="@+id/layoutProgressBar1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/progressBarCefalea"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible" />
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/imageViewCefalea"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/cefalea"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <!-- Aquí va el segundo ProgressBar con imagen -->
+                    <RelativeLayout
+                        android:id="@+id/layoutProgressBar2"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/progressBarDolorEpigastrio"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible" />
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/imageViewDolorEpigastrio"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dolor_epigastrio"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Agrega más filas de LinearLayout con ProgressBar e ImageView aquí si es necesario -->
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/secondRowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Aquí va el primer ProgressBar con imagen -->
+                    <RelativeLayout
+                        android:id="@+id/layoutProgressBar3"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/progressBarNauseas"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible" />
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/imageNauseas"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/nausea"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <!-- Aquí va el segundo ProgressBar con imagen -->
+                    <RelativeLayout
+                        android:id="@+id/layoutProgressBar4"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/progressBarHinchazonPies"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible" />
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/imageViewHinchazonPies"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/hinchazon_pies"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <!-- Agrega más filas de LinearLayout con ProgressBar e ImageView aquí si es necesario -->
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/parentLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dRowLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Aquí va el primer ProgressBar con imagen -->
+                    <RelativeLayout
+                        android:id="@+id/layoutProgressBar5"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/progressBarVisionBorrosa"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible"
+                            android:indeterminate="false"
+                            style="@style/Widget.AppCompat.ActionBar.Solid"/>
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/imageVisionBorrosa"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/vision_borrosa"
+                            android:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/circular_progress_bar" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar22"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/circular_progress_bar" />
+
+                        <ImageView
+                            android:id="@+id/centerImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/vision_borrosa" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

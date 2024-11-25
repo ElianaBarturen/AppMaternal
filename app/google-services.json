@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703325773290",
+    "project_id": "preeclampsiapp",
+    "storage_bucket": "preeclampsiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703325773290:android:e44c4b11731cc307c8a693",
+        "android_client_info": {
+          "package_name": "com.example.appmaternal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZO-PGdko677HZK3KHYt7RSG6xVEfu694"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
